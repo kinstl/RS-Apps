@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  
+  <title>5 | Aim Training</title>
+  <script type="module" crossorigin src="/RS-Apps/assets/aimGame-d617443c.js"></script>
+  <link rel="modulepreload" crossorigin href="/RS-Apps/assets/main-559622b6.js">
+  <link rel="stylesheet" href="/RS-Apps/assets/main-20157e3f.css">
+  <link rel="stylesheet" href="/RS-Apps/assets/index-31fa42e5.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="/cars-gallery/" class="header__link">Cars Gallery</a>
+      <a href="/drag-drop-todo/" class="header__link">Drag and Drop Todo</a>
+      <a href="/kinstl-slider/" class="header__link">Kinstl Slider</a>
+      <a href="/colored-squares-game/" class="header__link">Colored Squares Game</a>
+      <a href="/aim-game/" class="header__link">Aim Game</a>
+    </nav>
+    <button class="header__burger-btn js-burger-btn">
+      <i class="fas fa-bars" id="burgerOpenIcon"></i>
+      <i class="fas fa-times hide" id="burgerCloseIcon"></i>
+    </button>
+  </header>
+  <div class="screen">
+    <h1>Aim Training</h1>
+    <a href="#" class="start" id="start">Play</a>
+  </div>
+
+  <div class="screen">
+    <h1>Choose the game time</h1>
+    <ul class="time-list" id="time-list">
+      <li>
+        <button class="time-btn" data-time="10">
+          10 sec
+        </button>
+      </li>
+      <li>
+        <button class="time-btn" data-time="20">
+          20 sec
+        </button>
+      </li>
+      <li>
+        <button class="time-btn" data-time="30">
+          30 sec
+        </button>
+      </li>
+      <li>
+        <button class="time-btn" data-time="60">
+          60 sec
+        </button>
+      </li>
+      <li>
+        <button class="time-btn_custom" id="customTimeBtn">
+          Custom
+        </button>
+        <div class="custom-time-container">
+          <input type="text" class="time-btn_custom" data-time="" id="customTimeInput">
+          <button id="customTimeAcceptBtn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="screen">
+    <div class="content">
+      <h3>Time left <span id="time">00:00</span></h3>
+      <h3>
+        <a href="#" id="back">Back</a>
+      </h3>
+    </div>
+    <div class="board" id="board"></div>
+  </div>
+
+  <div class="burger js-burger">
+    <div class="burger__content js-burger__content">
+      <nav class="burger-nav">
+        <a href="/cars-gallery/" class="header__link">Cars Gallery</a>
+        <a href="/drag-drop-todo/" class="header__link">Drag and Drop Todo</a>
+        <a href="/kinstl-slider/" class="header__link">Kinstl Slider</a>
+        <a href="/colored-squares-game/" class="header__link">Colored Squares Game</a>
+        <a href="/aim-game/" class="header__link">Aim Game</a>
+      </nav>
+    </div>
+  </div>
+  
+  <script src="/src/js/main.js"></script>
+</body>
+
+</html>
